@@ -15,6 +15,10 @@ import {
 } from 'react-native';
 
 import Main from './Main';
+import Status from './Status';
+import Elevator from './Elevator';
+import Warning from './Warning';
+import Enter from './Enter';
 
 
 class constructionSecurity extends Component {
@@ -22,6 +26,18 @@ class constructionSecurity extends Component {
   renderScene(route, navigator){
     if (route.name == 'Main') {
         return <Main navigator={navigator} />
+    }
+    if (route.name == 'Status') {
+        return <Status navigator={navigator} />
+    }
+    if (route.name == 'Elevator') {
+        return <Elevator navigator={navigator} />
+    }
+    if (route.name == 'Warning') {
+        return <Warning navigator={navigator} />
+    }
+    if (route.name == 'Enter') {
+        return <Enter navigator={navigator} />
     }
   }
   
