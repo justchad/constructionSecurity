@@ -12,5 +12,8 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic, strong) UIWindow *window;
+//@property (nonatomic) ESTBeaconManager *firstBeaconRegion;
+//@property (nonatomic) ESTBeaconManager *secondBeaconRegion;
+//@property (nonatomic) ESTBeaconManager *thirdBeaconRegion;
 
 @end
